@@ -1,4 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Cursor glow follow
+    const cursorGlow = document.getElementById('cursorGlow');
+    if (cursorGlow) {
+        document.addEventListener('mousemove', (e) => {
+            cursorGlow.style.left = `${e.clientX}px`;
+            cursorGlow.style.top = `${e.clientY}px`;
+        });
+    }
+
     // 1. Navbar scroll effect
     const navbar = document.getElementById('navbar');
     window.addEventListener('scroll', () => {
@@ -54,6 +63,22 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (current >= target) {
                     current = target;
                     clearInterval(updateCounter);
+                    
+                    // Live APY logic
+                    if (stat.classList.contains('apy-value')) {
+                        const pulseDot = stat.parentElement.querySelector('.pulse-dot');
+                        if (pulseDot) pulseDot.classList.add('live');
+                        
+                        setInterval(() => {
+                            const randomAPY = (Math.random() * (23.9 - 23.1) + 23.1).toFixed(1);
+                            stat.style.opacity = '0.5';
+                            
+                            setTimeout(() => {
+                                stat.textContent = prefix + randomAPY + suffix;
+                                stat.style.opacity = '1';
+                            }, 300);
+                        }, Math.random() * 2000 + 3000); // 3-5 seconds
+                    }
                 }
                 
                 let displayValue = current.toFixed(decimals);
