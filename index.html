@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexVault | Yield Optimization Protocol</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="logo-icon"><path d="M6 3h12l4 6-10 13L2 9Z"/></svg>
+                NexVault
+            </a>
+            
+            <div class="nav-links" id="nav-links">
+                <a href="#features">Features</a>
+                <a href="#tokenomics">Tokenomics</a>
+                <a href="#roadmap">Roadmap</a>
+                <a href="#team">Team</a>
+                <a href="#faq">FAQ</a>
+                <a href="#" class="btn btn-primary nav-cta-mobile">Launch App</a>
+            </div>
+            
+            <a href="#" class="btn btn-primary nav-cta-desktop">Launch App</a>
+            
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-bg-grid"></div>
+        <div class="hero-content">
+            <div class="hero-badge class-glass">
+                <span class="dot"></span> Now Live on 7 Chains
+            </div>
+            
+            <h1 class="hero-title">Maximize Your Yield. Minimize Your Risk.</h1>
+            <p class="hero-subtitle">NexVault automatically moves your crypto between the highest-yielding pools across multiple blockchains — so you earn more without constantly watching the market.</p>
+            
+            <div class="hero-buttons">
+                <a href="#" class="btn btn-primary btn-glow">Get Started</a>
+                <a href="#" class="btn btn-secondary">Read Docs</a>
+            </div>
+            
+            <div class="trust-signals">
+                <span>✓ CertiK Audited</span>
+                <span>✓ $500K Insured</span>
+                <span>✓ Non-Custodial</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <section id="stats" class="stats">
+        <div class="stats-container class-glass">
+            <div class="stat-item">
+                <p class="stat-label">Total Value Locked</p>
+                <div class="stat-value" data-target="240" data-prefix="$" data-suffix="M">0</div>
+            </div>
+            <div class="stat-item">
+                <p class="stat-label">Active Users</p>
+                <div class="stat-value" data-target="18400" data-separator=",">0</div>
+            </div>
+            <div class="stat-item">
+                <p class="stat-label">Supported Chains</p>
+                <div class="stat-value" data-target="7">0</div>
+            </div>
+            <div class="stat-item">
+                <p class="stat-label">Average APY</p>
+                <div class="stat-value text-amber" data-target="23.4" data-suffix="%">0</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features section-padding">
+        <div class="container">
+            <div class="grid-2x2">
+                <!-- Feature 1 -->
+                <div class="feature-card class-glass hover-glow">
+                    <svg class="feature-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                    <h3 class="feature-title">Auto-Compounding Vaults</h3>
+                    <p class="feature-desc">Earnings reinvested every 8 hours automatically. No manual claiming — your returns compound while you sleep.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="feature-card class-glass hover-glow">
+                    <svg class="feature-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                    <h3 class="feature-title">Multi-Chain Support</h3>
+                    <p class="feature-desc">Runs across Ethereum, BNB Chain, Arbitrum, Polygon, Avalanche, Optimism, and Solana. NexVault finds the best opportunity wherever it exists.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="feature-card class-glass hover-glow">
+                    <svg class="feature-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    <h3 class="feature-title">Audited & Insured</h3>
+                    <p class="feature-desc">Audited by CertiK and PeckShield. Covered by Nexus Mutual insurance up to $500,000 per vault.</p>
+                </div>
+                <!-- Feature 4 -->
+                <div class="feature-card class-glass hover-glow">
+                    <svg class="feature-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path><path d="M22 12A10 10 0 0 0 12 2v10z"></path></svg>
+                    <h3 class="feature-title">Real-Time Risk Scoring</h3>
+                    <p class="feature-desc">Every vault displays a risk score 1–10 based on protocol age, liquidity depth, and historical volatility.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tokenomics Section -->
+    <section id="tokenomics" class="tokenomics section-padding">
+        <div class="container">
+            <h2 class="section-title">Tokenomics</h2>
+            <p class="token-info">Token: NXV | Supply: 100,000,000 | Network: Ethereum ERC-20</p>
+            
+            <div class="tokenomics-grid">
+                <div class="chart-container">
+                    <canvas id="tokenomicsChart"></canvas>
+                </div>
+                
+                <div class="tokenomics-data">
+                    <div class="table-responsive class-glass">
+                        <table class="token-table">
+                            <thead>
+                                <tr>
+                                    <th>Allocation</th>
+                                    <th>%</th>
+                                    <th>Amount</th>
+                                    <th>Vesting</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="color-dot" style="background: #10B981;"></span>Community Rewards</td>
+                                    <td>40%</td>
+                                    <td>40,000,000</td>
+                                    <td>4 years linear</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="color-dot" style="background: #F59E0B;"></span>Treasury</td>
+                                    <td>20%</td>
+                                    <td>20,000,000</td>
+                                    <td>2 years linear</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="color-dot" style="background: #34D399;"></span>Team & Advisors</td>
+                                    <td>15%</td>
+                                    <td>15,000,000</td>
+                                    <td>1 yr cliff, 2 yr linear</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="color-dot" style="background: #6EE7B7;"></span>Liquidity</td>
+                                    <td>15%</td>
+                                    <td>15,000,000</td>
+                                    <td>Unlocked</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="color-dot" style="background: #065F46;"></span>Ecosystem Grants</td>
+                                    <td>10%</td>
+                                    <td>10,000,000</td>
+                                    <td>3 years linear</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="utility-points">
+                        <div class="utility-item">
+                            <span class="utility-icon">💸</span>
+                            Stake NXV → earn 30% of all protocol fees
+                        </div>
+                        <div class="utility-item">
+                            <span class="utility-icon">🗳️</span>
+                            Vote on new vaults and upgrades via governance
+                        </div>
+                        <div class="utility-item">
+                            <span class="utility-icon">🚀</span>
+                            NXV stakers get +15% APY boost on all vaults
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section id="roadmap" class="roadmap section-padding">
+        <div class="container">
+            <h2 class="section-title">Roadmap</h2>
+            
+            <div class="timeline">
+                <!-- Q1 -->
+                <div class="timeline-item completed">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content class-glass">
+                        <div class="timeline-header">
+                            <h3 class="timeline-phase">Q1 2025 — Foundation</h3>
+                            <span class="timeline-status">✅ COMPLETED</span>
+                        </div>
+                        <p class="timeline-desc">Protocol launch on Ethereum + BNB Chain. 5 vaults live. CertiK audit complete. 2,000 early users.</p>
+                    </div>
+                </div>
+                
+                <!-- Q2 -->
+                <div class="timeline-item in-progress">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content class-glass">
+                        <div class="timeline-header">
+                            <h3 class="timeline-phase">Q2 2025 — Expansion</h3>
+                            <span class="timeline-status">⚡ IN PROGRESS</span>
+                        </div>
+                        <p class="timeline-desc">Arbitrum + Polygon live. NXV token launch and DEX listing. Governance activated. Target: $100M TVL.</p>
+                    </div>
+                </div>
+                
+                <!-- Q3 -->
+                <div class="timeline-item upcoming">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content class-glass">
+                        <div class="timeline-header">
+                            <h3 class="timeline-phase">Q3 2025 — Intelligence Layer</h3>
+                            <span class="timeline-status">🔜 UPCOMING</span>
+                        </div>
+                        <p class="timeline-desc">AI-powered vault scoring. Cross-chain yield dashboard. Mobile app beta (iOS + Android).</p>
+                    </div>
+                </div>
+                
+                <!-- Q4 -->
+                <div class="timeline-item upcoming">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content class-glass">
+                        <div class="timeline-header">
+                            <h3 class="timeline-phase">Q4 2025 — Institutional Access</h3>
+                            <span class="timeline-status">🔜 UPCOMING</span>
+                        </div>
+                        <p class="timeline-desc">Institutional vaults ($50K minimum). MoonPay fiat on-ramp. Full DAO handover. Target: $500M TVL.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team section-padding">
+        <div class="container">
+            <h2 class="section-title">Team</h2>
+            <div class="team-grid">
+                <!-- Team 1 -->
+                <div class="team-card class-glass">
+                    <img src="https://ui-avatars.com/api/?name=Alex+Mercer&background=030D07&color=10B981&size=120" alt="Alex Mercer" class="team-avatar">
+                    <h3 class="team-name">Alex Mercer</h3>
+                    <p class="team-role">Co-Founder & CEO</p>
+                    <p class="team-bio">Former DeFi lead at Aave. 6 years building DeFi protocols. Led $180M TVL growth before founding NexVault.</p>
+                    <a href="#" class="team-social">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </a>
+                </div>
+                <!-- Team 2 -->
+                <div class="team-card class-glass">
+                    <img src="https://ui-avatars.com/api/?name=Priya+Nair&background=030D07&color=10B981&size=120" alt="Priya Nair" class="team-avatar">
+                    <h3 class="team-name">Priya Nair</h3>
+                    <p class="team-role">Co-Founder & CTO</p>
+                    <p class="team-bio">Smart contract engineer, 5 years experience. Previously at Chainlink. Wrote the core vault architecture and led both security audits.</p>
+                    <a href="#" class="team-social">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </a>
+                </div>
+                <!-- Team 3 -->
+                <div class="team-card class-glass">
+                    <img src="https://ui-avatars.com/api/?name=Daniel+Osei&background=030D07&color=10B981&size=120" alt="Daniel Osei" class="team-avatar">
+                    <h3 class="team-name">Daniel Osei</h3>
+                    <p class="team-role">Head of Growth</p>
+                    <p class="team-bio">3 years in Web3 community building. Grew a community from 500 to 40,000 in 8 months. Based in Accra, Ghana.</p>
+                    <a href="#" class="team-social">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq section-padding">
+        <div class="container">
+            <h2 class="section-title">FAQ</h2>
+            <div class="faq-container">
+                <!-- Item 1 -->
+                <div class="faq-item class-glass active">
+                    <div class="faq-question">
+                        <h3>Is NexVault audited?</h3>
+                        <span class="faq-toggle"></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes. Audited by CertiK (January 2025) and PeckShield (March 2025). Both reports are public. Bug bounty up to $50,000.</p>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="faq-item class-glass">
+                    <div class="faq-question">
+                        <h3>Which chains are supported?</h3>
+                        <span class="faq-toggle"></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Ethereum, BNB Chain, Arbitrum, Polygon, Avalanche, Optimism, and Solana. New chains added via NXV governance.</p>
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="faq-item class-glass">
+                    <div class="faq-question">
+                        <h3>How are yields generated?</h3>
+                        <span class="faq-toggle"></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We deposit into Aave, Compound, and Curve — shifting automatically to the best return. No untested protocols ever.</p>
+                    </div>
+                </div>
+                <!-- Item 4 -->
+                <div class="faq-item class-glass">
+                    <div class="faq-question">
+                        <h3>What are the fees?</h3>
+                        <span class="faq-toggle"></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>10% performance fee on profits only. No deposit or withdrawal fees.</p>
+                    </div>
+                </div>
+                <!-- Item 5 -->
+                <div class="faq-item class-glass">
+                    <div class="faq-question">
+                        <h3>Can I withdraw anytime?</h3>
+                        <span class="faq-toggle"></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes. Standard vaults: no lockup. Institutional vaults: 7-day notice.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#" class="nav-logo">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="logo-icon"><path d="M6 3h12l4 6-10 13L2 9Z"/></svg>
+                        NexVault
+                    </a>
+                    <p class="footer-tagline">Decentralized yield, optimized for you.</p>
+                </div>
+                
+                <div class="footer-links-grid">
+                    <div class="footer-column">
+                        <h4>Protocol</h4>
+                        <a href="#">Docs</a>
+                        <a href="#">Audit Reports</a>
+                        <a href="#">Bug Bounty</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <a href="#">About</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Careers</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <a href="#">Terms</a>
+                        <a href="#">Privacy</a>
+                    </div>
+                </div>
+                
+                <div class="footer-social">
+                    <a href="#" aria-label="Twitter">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    </a>
+                    <a href="#" aria-label="Discord">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg>
+                    </a>
+                    <a href="#" aria-label="Telegram">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.05.01.24-.01.38z"/></svg>
+                    </a>
+                    <a href="#" aria-label="GitHub">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 NexVault Protocol. All rights reserved.</p>
+                <p class="not-advice">Not financial advice.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+    <!-- Main JS -->
+    <script src="js/main.js" defer></script>
+</body>
+</html>
